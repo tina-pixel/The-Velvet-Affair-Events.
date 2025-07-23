@@ -137,3 +137,10 @@ align-items: flex-start;
 
 }
 
+.extra-image,
+.left-image,
+.right-image {
+    content:"";
+    display:block;
+    clear:both;
+}
