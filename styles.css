@@ -1,0 +1,137 @@
+body{
+    margin: 0px;
+    overflow: hidden;
+    
+}
+.links-wrapper{
+    height: 90px;
+    background-color:#111111;
+    color: gold;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    font-family: "Playwrite VN Guides", cursive;
+    font-size: xx-large;
+         }
+
+    .links-wrapper>.nav-link a{
+      color: gold;
+    text-decoration: none;
+    transition: 0.5s;
+    }
+    
+    .links-wrapper>.nav-link a:hover{
+        color: #fff8dc;
+        letter-spacing:2px;
+        text-emphasis-color: black;
+        text-shadow: 0 0 8px;
+    }
+
+    .navigation-wrapper a{
+              text-decoration: none;
+    transition: 0.5s;
+    }
+    .imgsrc{
+        width: 180px;
+        height: 110px;
+       }
+.spaced-section{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: #111111;
+    position: relative;
+}
+
+.spaced-section img{
+  transition: transform 0.3s ease,box-shadow 0.3s ease;
+  }
+
+  .spaced-section img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #ffd700;
+    cursor: pointer;
+  }
+
+
+
+.left-image {
+  background-image: url("images/ao.jpg"); /* Adjust to your actual path */
+}
+
+.right-image {
+  background-image: url("images/po.jpg"); /* Replace with your second image */
+}
+
+.extra-image{
+    background-image:url("images/vo.jpg") ;
+}
+
+.wow {
+  
+  background-image: url("images/ma.jfif"); /* Use correct relative path */
+  background-repeat: no-repeat;            /* Prevents repeating */
+  background-size: cover;                  /* Makes image fill the section */
+  background-position: center;             /* Keeps the image centered */
+  background-attachment: fixed;            /* Optional: Adds parallax effect */
+  height: 90vh;  
+                      /* Makes section fill the viewport */
+  display: flex;
+align-items: flex-start;
+  justify-content: center;
+  color: white;                            /* Improves readability */
+  text-shadow: 1px 1px 2px black;          /* Optional: improves text contrast */
+}
+.split-screen {
+  display: flex;
+  height: 75vh;
+  width: 100vw;
+  
+}
+
+.extra-image,
+.left-image,
+.right-image {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+.extra-image,
+.left-image,
+.right-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: static; /* Needed for absolute child positioning */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  
+}
+
+
+.image-text {
+  position: absolute;
+  padding: 20px;
+  font-family: "Playwrite VN Guides", cursive;
+  color:black;
+  
+}
+
+.image-text:hover{
+  text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
+  color: #1b1b1a;
+  transform: scale(1.05);
+  letter-spacing: 2px;
+  cursor: pointer;
+
+}
+
