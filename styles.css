@@ -139,7 +139,7 @@ align-items: flex-start;
 
 .extra-image,
 .left-image,
-.right-image {
+.right-image ::after{
     content:"";
     display:block;
     clear:both;
