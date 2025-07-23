@@ -144,3 +144,7 @@ align-items: flex-start;
     display:block;
     clear:both;
 }
+.extra-image .image-text {
+  bottom: 40px;
+  top: auto;
+}
