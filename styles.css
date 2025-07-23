@@ -148,3 +148,11 @@ align-items: flex-start;
   bottom: 40px;
   top: auto;
 }
+exta-image.image-text:hover{
+  text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
+  color: #1b1b1a;
+  transform: scale(1.05);
+  letter-spacing: 2px;
+  cursor: pointer;
+
+}
