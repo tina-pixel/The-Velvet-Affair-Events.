@@ -1,6 +1,7 @@
 body{
     margin: 0px;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y:auto;
     
 }
 .links-wrapper{
@@ -96,6 +97,7 @@ align-items: flex-start;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+    height:100vh;
   
 }
 .extra-image,
