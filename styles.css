@@ -126,7 +126,7 @@ body {
 
 .image-text:hover {
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
-    color: #d4af37;
+    color: yellow;
     transform: scale(1.05);
     letter-spacing: 1.5px;
     cursor: pointer;
