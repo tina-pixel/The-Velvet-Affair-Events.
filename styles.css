@@ -1,158 +1,176 @@
-body{
-    margin: 0px;
-    overflow-x: hidden;
-    overflow-y:auto;
-    
+/* GLOBAL RESET */
+body {
+    margin: 0;
+     overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #f5f1e9; /* Light beige background */
+    font-family: "Georgia", serif;
+    color: #2f0d0d; /* Dark maroon text */
 }
-.links-wrapper{
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+/* NAVIGATION BAR */
+.links-wrapper {
     height: 90px;
-    background-color:#111111;
+    background-color: #4a0c27; /* Deep maroon */
     color: gold;
     display: flex;
-    justify-content: space-between;
-    align-items:center ;
-    font-family: "Playwrite VN Guides", cursive;
-    font-size: xx-large;
-         }
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+}
 
-    .links-wrapper>.nav-link a{
-      color: gold;
+.links-wrapper > .nav-link a {
+    color: gold;
     text-decoration: none;
     transition: 0.5s;
-    }
-    
-    .links-wrapper>.nav-link a:hover{
-        color: #fff8dc;
-        letter-spacing:2px;
-        text-emphasis-color: black;
-        text-shadow: 0 0 8px;
-    }
+}
 
-    .navigation-wrapper a{
-              text-decoration: none;
-    transition: 0.5s;
-    }
-    .imgsrc{
-        width: 180px;
-        height: 110px;
-       }
-.spaced-section{
+.links-wrapper > .nav-link a:hover {
+    color: #fff8dc; /* Light ivory */
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px gold;
+}
+
+
+/* LOGO SECTION BACKGROUND */
+.spaced-section {
     padding: 40px;
     display: flex;
     justify-content: center;
-    background-color: #111111;
+    background-color: #4a0c27; /* Deep maroon */
     position: relative;
 }
 
-.spaced-section img{
-  transition: transform 0.3s ease,box-shadow 0.3s ease;
-  }
+/* LOGO IMAGE HOVER EFFECT */
+.spaced-section img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 180px;
+    height: 120px;
+}
 
-  .spaced-section img:hover{
+.spaced-section img:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 12px #ffd700;
+    box-shadow: 0 0 12px #d4af37; /* Gold glow */
     cursor: pointer;
-  }
+}
 
-
-
+/* BACKGROUND IMAGES */
 .left-image {
-  background-image: url("images/ao.jpg"); /* Adjust to your actual path */
+    background-image: url("images/ao.jpg");
 }
 
 .right-image {
-  background-image: url("images/po.jpg"); /* Replace with your second image */
+    background-image: url("images/po.jpg");
 }
 
-.extra-image{
-    background-image:url("images/vo.jpg") ;
+.extra-image {
+    background-image: url("images/vo.jpg");
 }
 
 .wow {
-  
-  background-image: url("images/ma.jfif"); /* Use correct relative path */
-  background-repeat: no-repeat;            /* Prevents repeating */
-  background-size: cover;                  /* Makes image fill the section */
-  background-position: center;             /* Keeps the image centered */
-  background-attachment: fixed;            /* Optional: Adds parallax effect */
-  height: 90vh;  
-                      /* Makes section fill the viewport */
-  display: flex;
-align-items: flex-start;
-  justify-content: center;
-  color: white;                            /* Improves readability */
-  text-shadow: 1px 1px 2px black;          /* Optional: improves text contrast */
+    background-image: url("images/ma.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 90vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 1px 2px black;
 }
+
+/* SPLIT SECTIONS */
 .split-screen {
-  display: flex;
-  height: 75vh;
-  width: 100vw;
-  
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .extra-image,
 .left-image,
 .right-image {
-  flex: 1;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-    height:100vh;
-  
-}
-.extra-image,
-.left-image,
-.right-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  position: static; /* Needed for absolute child positioning */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(4px);
-  
+    flex: 1;
+    min-height: 33.33vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: ivory;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    backdrop-filter: blur(4px);
+    position: relative;
 }
 
-
+/* TEXT INSIDE SECTIONS */
 .image-text {
-  position: absolute;
-  padding: 20px;
-  font-family: "Playwrite VN Guides", cursive;
-  color:black;
+  background-color:  rgba(0,0,0,0.6);
+    position: absolute;
+    padding: 20px;
+    font-family: "Playfair Display", serif;
+       color: yellow;
+    font-size: 1.6rem;
+}
+
+.image-text:hover {
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+    color: #d4af37;
+    transform: scale(1.05);
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+/* EXTRA SECTION TEXT PLACEMENT */
+.extra-image .image-text {
+    bottom: 40px;
+    top: auto;
+}
+
+/* CLEAN FIX FOR FLOATING TEXT */
+.extra-image::after,
+.left-image::after,
+.right-image::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.swiper {
+  width: 100%;
+  height: 100vh;
   
 }
 
-.image-text:hover{
-  text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
-  color: #1b1b1a;
-  transform: scale(1.05);
-  letter-spacing: 2px;
-  cursor: pointer;
-
+.swiper-slide img {
+  width: 100%;
+  height: 170%;
+  object-fit: cover;
+  
 }
 
-.extra-image,
-.left-image,
-.right-image ::after{
-    content:"";
-    display:block;
-    clear:both;
-}
-.extra-image .image-text {
-  bottom: 40px;
-  top: auto;
-}
-exta-image.image-text:hover{
-  text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
-  color: #1b1b1a;
-  transform: scale(1.05);
-  letter-spacing: 2px;
-  cursor: pointer;
 
+.left-image, .right-image, .extra-image {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
 }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
